@@ -9,22 +9,18 @@
 
 </head>
 <body>
-   
-    <div class="container body-content">
-        <div id="header">
+            <div id="header">
             <h1>Asp.Net MVC MUSIC STORE</h1>
             <ul id="navlist">
                 <li class="first"><a href="/" id="current">Home</a>   </li>
-                <li><a href="/Store/">Store</a></li> 
+                <li><a href="/Store/">Store</a></li>            </ul>
+        
 
-            </ul>
-        </div>
-
-        @RenderBody()
+       
         <hr />
        
     </div>
-
+    @RenderBody()
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
