@@ -10,7 +10,8 @@
 <ul>
     @foreach (var genre in Model)
 {
-    <li>      @genre.Name</li>
+    @*<li>   <a href="/store/Browse?genre=@genre.Name">  @genre.Name </a> </li>*@
+    <li>@Html.ActionLink(genre.Name, "Browse", new { genre = genre.Name })</li>
 }
 
 </ul>
